@@ -7,18 +7,50 @@ namespace POO_PRODUTOS.Classes.cs
     {
         int Codigo { get; set; }
         string NomeMarca { get; set; }
-        DateTime DataCadrasto { get; set; }
+        DateTime DataCadastro { get; set; }
 
         List<Marca> Marcas { get; set; }
-        public string CadastrarMarca(Marca marca){
+        public Marca CadastrarMarca(){
 
-            return "";
+            Marca novaMarca = new Marca();
+
+            Console.WriteLine("Digite o Código da marca :");
+            Codigo = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o nome da marca :");
+            NomeMarca = Console.ReadLine();
+
+            novaMarca.DataCadastro = DateTime.UtcNow;
+
+            Marcas.Add(novaMarca);
+
+            return novaMarca;
+            
+            
+
+                                
+
+
+           //
             
         }
         public void lstar(){
 
+            Console.WriteLine("Marcas Cadastradas:");
+            foreach ( Marca item in Marcas)
+            {
+                Console.WriteLine($"Código : {item.Codigo}");
+                Console.WriteLine($"Marca : {item.NomeMarca}");
+                Console.WriteLine($"Data do Cadastro : {item.DataCadastro}");
+                
+                
+                
+            }
+
         }
-        public void Deletar(){
+        public void Deletar(int cod){
+            Marca marcaDElete = Marcas.Find(m => m.Codigo == cod);
+            Marcas.Remove(marcaDElete);
 
         }
         
