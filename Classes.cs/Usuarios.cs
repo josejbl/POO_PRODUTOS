@@ -17,9 +17,9 @@ namespace POO_PRODUTOS.Classes.cs
             DataCadastro = DateTime.UtcNow;
         }
         int Codigo { get; set; }
-        string Nome { get; set; }
-        string Email  { get; set; }
-        string Senha { get; set; }
+        public string Nome { get; set; }
+        public string Email  { get; set; }
+        public string Senha { get; set; }
         DateTime DataCadastro { get; set; }
 
         public void Cadastrar(){

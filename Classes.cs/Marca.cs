@@ -6,7 +6,7 @@ namespace POO_PRODUTOS.Classes.cs
     public class Marca
     {
         int Codigo { get; set; }
-        string NomeMarca { get; set; }
+        public string NomeMarca { get; set; }
         DateTime DataCadastro { get; set; }
 
         List<Marca> Marcas { get; set; }
@@ -26,15 +26,13 @@ namespace POO_PRODUTOS.Classes.cs
 
             return novaMarca;
             
-            
+    
 
-                                
+                              
 
-
-           //
-            
+         
         }
-        public void lstar(){
+        public void Listar(){
 
             Console.WriteLine("Marcas Cadastradas:");
             foreach ( Marca item in Marcas)

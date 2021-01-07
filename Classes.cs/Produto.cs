@@ -34,16 +34,40 @@ namespace POO_PRODUTOS.Classes.cs
             
             // Atribuímos o usuário atrvés do método construtor
             
-            CadastradoPor = new Usuarios();
+            novoProduto.CadastradoPor = new Usuarios();
+
+            ListaDeProduto.Add(novoProduto);
         }
 
         public void Listar(){
-
+            Console.ForegroundColor = ConsoleColor.Green;
+            foreach (var item in ListaDeProduto)
+            {
+            Console.WriteLine($"Código: {item.Codigo}");
+            Console.WriteLine($"Produto: {item.NomeProduto}");
+            Console.WriteLine($"Preco: R$ {item.Preco}");
+            Console.WriteLine($"Data de Cadastro: {item.DataCadastro}");
+            Console.WriteLine($"Marca :{item.Marca.NomeMarca}");
+            Console.WriteLine($"Cadastrado por: {item.CadastradoPor.Nome}");
+            Console.WriteLine();
+            }
+            Console.ResetColor();
         }
-        
-        
-        
-        
-        
+        public void Deletar(int cod){
+            Produto prodDelete = ListaDeProduto.Find(p => p.Codigo == cod);
+            ListaDeProduto.Remove(prodDelete);
+        }
     }
 }
+            
+            
+
+
+
+            
+
+        
+        
+        
+        
+        

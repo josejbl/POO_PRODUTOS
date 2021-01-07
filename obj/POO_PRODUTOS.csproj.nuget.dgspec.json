@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fic\\Desktop\\POO_PRODUTOS\\POO_PRODUTOS.csproj": {}
+    "C:\\Users\\fic\\Downloads\\POO_PRODUTOS\\POO_PRODUTOS\\POO_PRODUTOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fic\\Desktop\\POO_PRODUTOS\\POO_PRODUTOS.csproj": {
+    "C:\\Users\\fic\\Downloads\\POO_PRODUTOS\\POO_PRODUTOS\\POO_PRODUTOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fic\\Desktop\\POO_PRODUTOS\\POO_PRODUTOS.csproj",
+        "projectUniqueName": "C:\\Users\\fic\\Downloads\\POO_PRODUTOS\\POO_PRODUTOS\\POO_PRODUTOS.csproj",
         "projectName": "POO_PRODUTOS",
-        "projectPath": "C:\\Users\\fic\\Desktop\\POO_PRODUTOS\\POO_PRODUTOS.csproj",
+        "projectPath": "C:\\Users\\fic\\Downloads\\POO_PRODUTOS\\POO_PRODUTOS\\POO_PRODUTOS.csproj",
         "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fic\\Desktop\\POO_PRODUTOS\\obj\\",
+        "outputPath": "C:\\Users\\fic\\Downloads\\POO_PRODUTOS\\POO_PRODUTOS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config"

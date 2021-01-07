@@ -1,4 +1,5 @@
 ﻿using System;
+using POO_PRODUTOS.Classes.cs;
 
 namespace POO_PRODUTOS
 {
@@ -6,7 +7,7 @@ namespace POO_PRODUTOS
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Login app = new Login();
         }
     }
 }
